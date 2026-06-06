@@ -1,6 +1,16 @@
 # FlowbiteTheme — Plugin para LibreNMS
 
+![PHP](https://img.shields.io/badge/PHP-8.1%2B-blue)
+![LibreNMS](https://img.shields.io/badge/LibreNMS-compatible-green)
+![License](https://img.shields.io/badge/license-MIT-lightgrey)
+
 Un plugin que reemplaza el layout clásico de LibreNMS por un diseño moderno basado en [Flowbite](https://flowbite.com/) (Tailwind CSS), con barra lateral rediseñada, topbar y amplia personalización visual. **No modifica ningún archivo del núcleo de LibreNMS.**
+
+## Screenshots
+
+> Agrega tus capturas de pantalla aquí.
+> Puedes subir imágenes a la carpeta `screenshots/` del repositorio y referenciarlas así:
+> `![Dashboard](screenshots/dashboard.png)`
 
 ---
 
