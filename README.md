@@ -19,12 +19,48 @@ Un plugin que reemplaza el layout clásico de LibreNMS por un diseño moderno ba
 
 ## Instalación
 
+### 1. Clonar el repositorio
+
 ```bash
 cd /opt/librenms/app/Plugins
 git clone https://github.com/danpal-dev/librenms-flowbite-theme.git FlowbiteTheme
 ```
 
-Luego ve a **LibreNMS → Plugins** y activa **FlowbiteTheme**.
+### 2. Corregir permisos
+
+```bash
+chown -R librenms:librenms /opt/librenms/app/Plugins/FlowbiteTheme
+```
+
+### 3. Activar el plugin en LibreNMS
+
+1. Inicia sesión en LibreNMS como administrador.
+2. Ve a **Configuración → Plugins** (o accede directamente a `/plugins`).
+3. Busca **FlowbiteTheme** en la lista y haz clic en **Enable**.
+
+### 4. Activar el tema por usuario
+
+Una vez activado el plugin, cada usuario puede habilitar o deshabilitar el tema desde:
+
+**Menú → Plugins → Flowbite Theme**
+
+O accediendo directamente a `/plugin/FlowbiteTheme`.
+
+### Actualizar
+
+```bash
+cd /opt/librenms/app/Plugins/FlowbiteTheme
+git pull
+```
+
+### Desinstalar
+
+1. Desactiva el plugin desde **Configuración → Plugins**.
+2. Elimina la carpeta:
+
+```bash
+rm -rf /opt/librenms/app/Plugins/FlowbiteTheme
+```
 
 ---
 
@@ -51,6 +87,13 @@ Y configurar:
 
 - LibreNMS con soporte de plugins (sistema de hooks `app/Plugins`).
 - PHP 8.1+
+
+---
+
+## Autor
+
+**danpal-dev**
+- GitHub: [@danpal-dev](https://github.com/danpal-dev)
 
 ---
 
