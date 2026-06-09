@@ -36,13 +36,19 @@ cd /opt/librenms/app/Plugins
 git clone https://github.com/danpal-dev/librenms-flowbite-theme.git FlowbiteTheme
 ```
 
-### 2. Corregir permisos
+### 2. Copiar los archivos CSS al directorio público
+
+```bash
+cp /opt/librenms/app/Plugins/FlowbiteTheme/public/css/*.css /opt/librenms/html/css/
+```
+
+### 3. Corregir permisos
 
 ```bash
 chown -R librenms:librenms /opt/librenms/app/Plugins/FlowbiteTheme
 ```
 
-### 3. Activar el plugin en LibreNMS
+### 4. Activar el plugin en LibreNMS
 
 1. Inicia sesión en LibreNMS como administrador.
 2. Ve a **Configuración → Plugins** (o accede directamente a `/plugins`).
@@ -61,6 +67,7 @@ O accediendo directamente a `/plugin/FlowbiteTheme`.
 ```bash
 cd /opt/librenms/app/Plugins/FlowbiteTheme
 git pull
+cp /opt/librenms/app/Plugins/FlowbiteTheme/public/css/*.css /opt/librenms/html/css/
 ```
 
 ### Desinstalar
